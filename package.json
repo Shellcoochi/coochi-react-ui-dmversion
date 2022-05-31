@@ -6,6 +6,8 @@
   "module": "lib/index.js",
   "types": "lib/index.d.ts",
   "scripts": {
+    "dumi": "cross-env APP_ROOT=dumi dumi dev",
+    "dumi-build": "cross-env APP_ROOT=dumi dumi build",
     "clean": "rimraf dist && rimraf lib",
     "build:dev": "cross-env NODE_ENV=development webpack",
     "build:prod": "cross-env NODE_ENV=production webpack",
@@ -42,6 +44,7 @@
     "cpr": "^3.0.1",
     "cross-env": "^7.0.3",
     "css-loader": "^5.2.0",
+    "dumi": "^1.1.42",
     "less": "^4.1.1",
     "less-loader": "^8.0.0",
     "make-dir-cli": "^3.0.0",
